@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/global_round_button.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_search_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_baseline_star_outline_24.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_fork.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_git_fork.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/plain_border_radius5.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/rounded_bg.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/selected_item_background.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_github.xml" value="0.23802083333333332" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21302083333333333" />
+        <entry key="app/src/main/res/layout/common_dialog.xml" value="0.165" />
+        <entry key="app/src/main/res/layout/progressbar.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/layout/repo_items.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/menu-v26/toolbar_menu.xml" value="0.23697916666666666" />
+        <entry key="app/src/main/res/menu/toolbar_menu.xml" value="0.21302083333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/cl_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_5dp"
+    android:layout_marginHorizontal="@dimen/margin_5dp"
+    android:padding="@dimen/margin_12dp"
+    android:background="@drawable/plain_border_radius5">
+
+    <TextView
+        android:id="@+id/txt_author_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/heading_color"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="EbookFoundation / free-programming-books" />
+
+    <TextView
+        android:id="@+id/txt_description"
+        android:layout_width="@dimen/margin_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_author_name"
+        tools:text="📚 Freely available programming books" />
+
+    <TextView
+        android:id="@+id/txt_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:drawablePadding="@dimen/margin_2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        app:drawableStartCompat="@drawable/ic_baseline_circle_24"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_description"
+        tools:text="Python" />
+
+    <TextView
+        android:id="@+id/txt_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:drawablePadding="@dimen/margin_2dp"
+        app:layout_goneMarginStart="@dimen/margin_0dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        app:drawableStartCompat="@drawable/ic_baseline_star_outline_24"
+        app:drawableTint="@color/text_color"
+        app:layout_constraintStart_toEndOf="@id/txt_language"
+        app:layout_constraintTop_toBottomOf="@+id/txt_description"
+        tools:text="240,258" />
+
+    <TextView
+        android:id="@+id/txt_forks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_20dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:drawablePadding="@dimen/margin_2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        app:drawableStartCompat="@drawable/ic_git_fork"
+        app:drawableTint="@color/text_color"
+        app:layout_constraintStart_toEndOf="@+id/txt_stars"
+        app:layout_constraintTop_toBottomOf="@+id/txt_description"
+        tools:text="49,641" />
+
+    <TextView
+        android:id="@+id/txt_built_by"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/built_by"
+        android:textColor="@color/text_color"
+        app:layout_constraintBottom_toBottomOf="@+id/ll_built_by"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ll_built_by" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/ll_built_by"
+        android:layout_width="@dimen/margin_0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:orientation="horizontal"
+        android:layout_marginStart="@dimen/margin_5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/txt_built_by"
+        app:layout_constraintTop_toBottomOf="@+id/txt_stars" />
+
+    <TextView
+        android:id="@+id/txt_stars_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="@dimen/margin_2dp"
+        android:layout_marginTop="@dimen/margin_2dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/text_color"
+        app:drawableStartCompat="@drawable/ic_baseline_star_outline_24"
+        app:drawableTint="@color/text_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_built_by"
+        tools:text="479 stars today" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

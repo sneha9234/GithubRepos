@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardCornerRadius="@dimen/margin_16dp"
+    app:cardUseCompatPadding="true"
+    android:elevation="@dimen/margin_4dp"
+    app:elevation="@dimen/margin_4dp"
+    app:cardElevation="@dimen/margin_4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_bg">
+
+        <TextView
+            android:id="@+id/dialogTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view8"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1dp"
+            android:layout_marginHorizontal="5dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:background="@color/white_20"
+            app:layout_constraintTop_toBottomOf="@id/dialogTitle" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/dialogImage"
+            android:layout_width="@dimen/margin_155dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            android:layout_height="@dimen/margin_155dp"
+            app:lottie_rawRes="@raw/oops_something_wentwrong"
+            android:layout_marginTop="@dimen/margin_4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view8"/>
+
+        <TextView
+            android:id="@+id/commonDialogContent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin_16dp"
+            android:layout_marginTop="@dimen/margin_16dp"
+            android:gravity="center"
+            android:textColor="@color/white_70opacity"
+            android:textSize="@dimen/text_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dialogImage" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/customDialogButtonPositive"
+            android:layout_width="@dimen/margin_180dp"
+            android:layout_height="@dimen/margin_35dp"
+            android:layout_marginTop="@dimen/margin_28dp"
+            android:layout_marginBottom="@dimen/margin_20dp"
+            android:background="@drawable/global_round_button"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/commonDialogContent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
